@@ -1,8 +1,14 @@
+import { Outlet } from "react-router";
+import { Header } from "./components/layout/Header";
+
 function App() {
 	return (
-		<>
-			<h1>Hi</h1>
-		</>
+		<div className="min-h-svh bg-gradient-to-br from-gray-900 to-gray-800">
+			<Header />
+			<main className="max-w-7xl mx-auto">
+				<Outlet />
+			</main>
+		</div>
 	);
 }
 
